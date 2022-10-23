@@ -1,6 +1,20 @@
 const url = "https://635401afccce2f8c02013b7d.mockapi.io";
 
 const card = document.getElementById("cardDiv");
+const logout = document.getElementById('logout');
+
+const user_id_localStorage = localStorage.getItem('user_id');
+const user_name = localStorage.getItem('name');
+
+
+console.log("Ini nama user :"+user_name)
+
+//Jika tidak ada user id maka kembali ke signup
+if (!user_id_localStorage && !user_name) {
+  alert("ANDA BELUM LOGIN!")
+  window.location = 'Login.html';
+}
+
 
 async function getMockApi(url) {
   const response = await fetch(url);
@@ -16,6 +30,17 @@ getMockApi(`${url}/listBantuan`).then(function (result) {
     console.log(listBantuan.gambar);
     cetakcard(listBantuan)
   });
+});
+
+
+logout.addEventListener('click', function(e) {
+  e.preventDefault();
+  let pesan = "Apakah Anda yakin untuk Log Out?";
+  if (confirm(pesan) == true) {
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('name');
+    window.location = 'login.html';
+  } 
 });
 
 //untuk menangkap enter dari search

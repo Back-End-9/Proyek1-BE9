@@ -34,7 +34,9 @@ document.getElementById('form-login').addEventListener('submit', function (e) {
             if (userlogin) {
                 if (userlogin.password === password) {
                     alert('Login berhasil');
+                    // ini mengirim data ke local
                     localStorage.setItem('user_id', userlogin.id);
+                    localStorage.setItem('name', userlogin.name);
                     window.location = 'home.html';
                 } else {
                     alert('Password salah');

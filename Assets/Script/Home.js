@@ -1,5 +1,24 @@
 const url = "https://635401afccce2f8c02013b7d.mockapi.io";
 
+const logout = document.getElementById('logout');
+
+// Mengambil nilai local
+const user_id_localStorage = localStorage.getItem('user_id');
+const user_name = localStorage.getItem('name');
+
+
+console.log("Ini nama user :"+user_name)
+
+//Jika tidak ada user id maka kembali ke signup
+if (!user_id_localStorage && !user_name) {
+  alert("ANDA BELUM LOGIN!")
+  window.location = 'Login.html';
+}
+else {
+  const halo = document.getElementById("nav-left");
+  halo.innerHTML=`<p>Welcome,${user_name}</p>`; 
+}
+
 const card = document.getElementById("cardDiv");
 
 async function getMockApi(url) {
@@ -9,6 +28,19 @@ async function getMockApi(url) {
 
   return result;
 }
+
+
+logout.addEventListener('click', function(e) {
+  e.preventDefault();
+  let pesan = "Apakah Anda yakin untuk Log Out?";
+  if (confirm(pesan) == true) {
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('name');
+    window.location = 'login.html';
+  } else {
+  }
+});
+
 
 getMockApi(`${url}/listBantuan`).then(function (result) {
   card.innerHTML = "";
