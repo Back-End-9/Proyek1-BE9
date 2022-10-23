@@ -64,11 +64,11 @@
 }
 
 
-#pembungkusCard{
+/* #pembungkusCard{
     display: flex;
     flex: wrap;
     justify-content: space-between;
-}
+} */
 
 
 /* Tentang bantuin.aja */
@@ -112,6 +112,7 @@
 #listbantuan {
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 48px;
 }
 
 
@@ -123,11 +124,7 @@
 #tahapan {
     margin-top: 60px;
     margin-bottom: 60px;
-    padding: 10px;
-}
-
-#tahapan h1 {
-    text-align: center;
+    
 }
 
 
@@ -164,7 +161,7 @@ ul > li{
 }
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     #card-container{
         display: flex;
         flex-wrap: wrap;
@@ -196,6 +193,6 @@ ul > li{
     }
 
     
-}
+} */
     
 
