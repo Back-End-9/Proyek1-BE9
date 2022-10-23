@@ -38,12 +38,13 @@
 
 .bantuan{
     background-color: #003F7E;
-    height: 435px;
+    height: 439px;
     color:#ffff;
 }
 
 .logo-sponsor{
     box-shadow: 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
+    width: 150px;
 }
 .jenis-bantuan{
     font-family: Arial;
@@ -130,3 +131,29 @@ form{
     background-color: #F27C36
 }
 
+
+/* FOOTER */
+ul{
+    list-style: none;
+}
+ul > li{
+    margin-bottom: 5px;
+}
+.footer{
+    margin-top: 100px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.alamat{
+    width: 40vw;
+}
+
+.img-footer{
+    width: 150px;
+    height: 100px;
+}
