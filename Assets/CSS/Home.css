@@ -1,4 +1,30 @@
-/* Navbar */
+/* Navbar tambahan*/
+
+
+.nav > .nav-item > .nav-link {
+    color: rgb(8, 8, 8);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+    padding: 8px;
+}
+
+.nav > .nav-item > .nav-link:hover {
+    color: #003F7E;
+    border-bottom: solid 3px #E05D0F;
+}
+
+
+/* Navbar farhan*/
+
+.nav > .nav-item > .nav-link {
+    color: rgb(8, 8, 8);
+}
+
+.nav-left > p {
+    color: #003F7E;
+}
 
 .navbar{
     height: 80px;
@@ -48,7 +74,8 @@
 /* Tentang bantuin.aja */
 
 #about {
-    background-image: url('/Assets/Picture/Header.jpg');
+    background-color: #003F7E;
+    color: #ffff;
     width: 100%;
     height: 90vh;
     display: -webkit-flex;
@@ -103,8 +130,10 @@
     text-align: center;
 }
 
-i {
+
+#tahapan i {
     font-size: 65px;
+    color: #003F7E;
 }
 
 
