@@ -48,12 +48,12 @@ getMockApi(`${url}/listBantuan`).then(function (result) {
     if (listBantuan.id_bantuan <= 4) {
       console.log(listBantuan.gambar);
       card.innerHTML += `
-        <div class= "card col-4 m-1 mx-auto mb-4  justify-content-center " id="isicard">
+        <div class= "card col-4 m-1 mx-auto mb-4 p-3 justify-content-center" id="isicard">
             <img class="card-img-top" src=${listBantuan.gambar} alt="${listBantuan.nama_bantuan}">
-            <div class="card-body">
+            <div class="card-body text-center">
                 <h5 class="card-title">${listBantuan.nama_bantuan}</h5>
-                <p class="card-text">${listBantuan.deadline}</p>
-                <a href="#" class="btn btn-primary">Lihat Bantuan</a>
+                <p class="card-text">${listBantuan.deadline}</p>   
+                <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Bantuan</a>
             </div>
          </div>`;
     }
