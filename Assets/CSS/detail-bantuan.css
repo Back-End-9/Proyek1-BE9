@@ -45,3 +45,33 @@ footer {
 .footer-info {
   padding: 10px 50px;
 }
+
+.col-sm-6{
+  padding-left: 130px;
+}
+
+.offered {
+  margin: 30px ;
+}
+
+@media screen and (max-width: 500px) {
+  #nav-logo > img {
+      display: none;
+  }
+
+  .offered{
+    padding-top: 10px;
+  }
+
+  .img-offered{
+    width: 50px;
+  };
+
+  #img-footer{
+    width: 20px;
+    
+  }
+  
+
+  
+}

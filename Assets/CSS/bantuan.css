@@ -101,3 +101,9 @@ ul > li{
     width: 150px;
     height: 100px;
 }
+
+@media screen and (max-width: 500px) {
+    .nav-left > img {
+        display: none;
+    }
+}

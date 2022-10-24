@@ -16,7 +16,7 @@ if (!user_id_localStorage && !user_name) {
 }
 else {
   const halo = document.getElementById("nav-left");
-  halo.innerHTML=`<p class="text-uppercase">Welcome, ${user_name}</p>`; 
+  halo.innerHTML=`<p class="text-uppercase" id="user_logged">Welcome, ${user_name}</p>`; 
 }
 
 const card = document.getElementById("cardDiv");

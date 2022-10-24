@@ -14,8 +14,8 @@
     <title>Detail Bantuan</title>
   </head>
   <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow">
-      <img src="/Assets/Picture/logo.png" class="my-0 mr-md-auto font-weight-normal" alt="" style="width: 70px; margin-left: 100px;">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow" id="nav-logo">
+      <img src="/Assets/Picture/logo.png" class="my-0 mr-md-auto font-weight-normal" alt="">
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="navbar-brand" href="/home.html">Home</a>
         <a class="navbar-brand" href="/bantuan.html">Bantuan</a>
@@ -32,9 +32,9 @@
       </nav>
     </div>
 
-    <div class="detail-header row" style="background-color:#003F7E; color:#F8F8F8;  border-bottom-left-radius: 40px;  border-bottom-right-radius: 40px;">
-      <div class="col-sm-6" style="padding-left: 130px;
-      padding-top: 20px;">
+    <div class="detail-header row d-flex justify-content-between" style="background-color:#003F7E; color:#F8F8F8;  border-bottom-left-radius: 40px;  border-bottom-right-radius: 40px;">
+      
+      <div class="col" style="padding-left: 50px; padding-top: 20px;">
         <a class="p-2" href="/bantuan.html" style="text-decoration: none; color: #F8F8F8;"><i class="fa fa-chevron-left" style="color: #F8F8F8;"></i> Kembali</a>
         <div>
           <h1 id="nama_bantuan"></h1>
@@ -44,20 +44,18 @@
         
         <a href="" class="btn" id="btn" style="color:white; background-color:#F27C36; margin-top:50px;">Apply</a>
       </div>
-      <div class="col-sm-6 d-flex flex-column align-items-center" style="padding-left: 130px;
-      padding-top: 20px;">
+      <div class="col-sm-6 d-flex flex-column align-items-center" padding-top: 20px;">
       <!-- https://i.postimg.cc/C5VsRM55/beasiswa-s1.jpg -->
         <img id="gambar_bantuan" src="" alt="" style="margin: 15px;">
-        <div style="margin: 30px;">
+        <div class="offered">
           <span>Offered BY</span>
-          <img src="/Assets/Picture/nus.png" alt="">
+          <img class="img-offered" style="width: 255px; padding-bottom: 15px;" src="/Assets/Picture/nus.png" alt="">
         </div>
       </div>
     </div>
 
-    <div class="container-fluid row" style="padding-left: 100px;
-    padding-top: 20px; margin-bottom: 50px;">
-      <div class="col-6 col-md">
+    <div class="container-fluid row d-flex justify-content-between">
+      <div class="col-4 col-md ">
         <div>
           <h2 class="deskripsi">Deskripsi Bantuan</h2>
           <!-- Bantuan pendidikan jenjang S1 Merupakan program bantuan yang diadakan oleh NUS University adapun bantuan yang diberikan berupa :
@@ -73,12 +71,12 @@
               <li >KTP</li>
               <li>SKTM</li>
             </ol>
-            
             Upload dua file diatas ke dalam gdrive</p>
         </div>
       </div>
-      <div class="col-6 col-md d-flex flex-column justify-content-center align-items-center">
-        <h2 class="mb-3">Tahapan Bantuan</h2>
+      <div class="col-2 col-md "></div>
+      <div class="col-4 col-md d-flex flex-column justify-content-start align-items-center">
+        <h2 class="mb-3 text-center">Tahapan Bantuan</h2>
         <div class="d-flex flex-column justify-content-center align-items-center">
           <img src="/Assets/Picture/Vector.png" alt="" class="step-icon">
           <span class="text-icon">Lengkapi Dokumen</span>
@@ -97,29 +95,20 @@
       </div>
     </div>
 
-    <div class="container-fluid p-0">
-      <!-- class="pt-4 my-md-5 pt-md-5 border-top" -->
-      <footer class="justify-content-start" >
-        <div class="row align-items-center d-flex justify-content-center" style="height: 300px;">
-          <div class="col">
-           <img class="ml-5" src="/Assets/Picture/logo.png" alt="">
-          </div>
-          <div class="col">
-            <div class="footer-info">
-              <h5>Bantuin.aja Part of PT IMPACTBYTE TEKNOLOGI EDUKASI.</h5>
-              <span>Jl. Kemang Raya No.10, Bangka, Mampang Prapatan, Jakarta Selatan 12730. DKI Jakarta 12730, Indonesia</span><br>
-              <span>Telepon  : 08123423491381</span>
-            </div>
-          </div>
-         
-        </div>
-        <div class="row text-center">
-          <div class="col mt-5 mb-2">
-            <span>@Copyright 2022 by  bantuin.aja skilvull</span>
+    <div class="container-fluid footer p-4" style="background-color: #000000">
+      <div class="container">
+        <div class="row d-flex justify-content-start">
+          <div class="col d-flex justify-content-start  mt-5">
+             <img src="./Assets/Picture/logo-baru.png" class="me-5" alt="" >
+             <ul class="footer-text">
+                  <li style="color:white; list-style: none;">Bantuin.aja Part of  PT IMPACTBYTE TEKNOLOGI EDUKASI. </li>
+                  <li class="alamat" style="color:white; list-style: none">Jl. Kemang Raya No.10, Bangka, Mampang Prapatan, Jakarta Selatan 12730. DKI Jakarta 12730, Indonesia</li>
+                  <li style="color:white; list-style: none;">Telepon  : 08123423491381</li>
+              </ul>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <script src="/Assets/Script/detail-bantuan.js"></script>
