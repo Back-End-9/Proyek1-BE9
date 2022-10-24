@@ -1,0 +1,47 @@
+a {
+  color: #A9A8A8;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+  color: #A9A8A8;
+}
+
+.navbar-brand:hover{
+  color: #003F7E;
+  font-weight: bold;
+  border-bottom: solid 4px #E05D0F;
+}
+
+.navbar-brand > i:hover{
+  color: #003F7E;
+}
+
+.step-icon {
+  width: 40px;
+}
+
+.text-icon {
+  font-size: 16px;
+}
+
+.vertical-divider {
+  background: #F27C36;
+  width: 3px;
+  height: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.footer-info {
+  padding: 10px 50px;
+}
