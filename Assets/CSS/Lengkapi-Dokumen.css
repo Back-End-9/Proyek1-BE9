@@ -9,14 +9,20 @@
     transition: 0.2s;
 }
 
+.dropdown > .navbar-brand {
+    transition: 0.2s;
+}
+
+.dropdown > .navbar-brand:hover {
+    color: #003F7E;
+    border-bottom: solid 4px #E05D0F;
+}
+
 .nav-right > .navbar-brand:hover{
     color: #003F7E;
     border-bottom: solid 4px #E05D0F;
 }
-.back{
-    font-family: Poppins;
-    position: absolute;
-}
+
 .nama-bantuan{
     font-family: Poppins;
     font-weight: 500;

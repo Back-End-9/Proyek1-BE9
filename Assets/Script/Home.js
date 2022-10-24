@@ -53,7 +53,7 @@ getMockApi(`${url}/listBantuan`).then(function (result) {
             <div class="card-body text-center">
                 <h5 class="card-title">${listBantuan.nama_bantuan}</h5>
                 <p class="card-text">${listBantuan.deadline}</p>   
-                <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Bantuan</a>
+                <a href="/detail-bantuan.html?id_bantuan=${listBantuan.id_bantuan}" class="btn btn-primary d-flex justify-content-center">Lihat Bantuan</a>
             </div>
          </div>`;
     }

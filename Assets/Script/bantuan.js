@@ -67,7 +67,7 @@ function cetakcard(listBantuan) {
     <div class="card-body">
         <h5 class="card-title">${listBantuan.nama_bantuan}</h5>
         <p class="card-text">${listBantuan.deadline}</p>
-        <a href="${listBantuan.id_Bantuan}" class="btn btn-primary">Lihat Bantuan</a>
+        <a href="/detail-bantuan.html?id_bantuan=${listBantuan.id_bantuan}" class="btn btn-primary">Lihat Bantuan</a>
     </div>
   </div>`;
 }
