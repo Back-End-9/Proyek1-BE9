@@ -30,7 +30,7 @@ logout.addEventListener('click', function(e) {
   if (confirm(pesan) == true) {
     localStorage.removeItem('user_id');
     localStorage.removeItem('name');
-    window.location = 'login.html';
+    window.location = 'index.html';
   } else {
   }
 });

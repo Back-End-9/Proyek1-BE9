@@ -31,27 +31,30 @@ async function postMockApi(url, payload) {
 //FORM
 
 const btn = document.getElementById("btn-kirim")
-
+const penjelas = document.getElementById("penjelas")
+let  nama;
 btn.addEventListener('click',function(e){
     e.preventDefault();
 
     const linkKTP_User = document.getElementById("link-KTP").value
     const linkSKTM_User = document.getElementById("link-SKTM").value
     
-    
+    console.log("data terkirim")
     postMockApi(`${url}/Aplication`, {
         "id_user" : id_user_localStorage,         
         "id_bantuan" : id_bantuan,
         "link_ktp" : linkKTP_User,
         "link_sktm" : linkSKTM_User,
+    }).then(function(){
+      window.location = `../detail-bantuan.html?id_bantuan=${id_bantuan}`
     })
+
 })
 
 getMockApi(`${url}/listBantuan/${id_bantuan}`)
   .then(function (result) {
     const judulBantuan = document.getElementById('field-judul-bantuan');
     const gambarBantuan = document.getElementById('field-gambar-bantuan');
-
     judulBantuan.innerHTML= result.nama_bantuan;
     gambarBantuan.src = result.gambar;
   });
@@ -66,8 +69,9 @@ getMockApi(`${url}/listBantuan/${id_bantuan}`)
 
     if (isSubmitted.length > 0) {
       form.style.display = 'none';
-      document.getElementById(`sub-title-lengkapi-dokumen`).innerText = "Data Anda Sudah Terisi"
+      penjelas.innerHTML=`Anda sudah melakukan apply bantuan `
     }
+    
   });
 
 

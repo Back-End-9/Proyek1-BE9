@@ -12,7 +12,7 @@ console.log("Ini nama user :"+user_name)
 //Jika tidak ada user id maka kembali ke signup
 if (!user_id_localStorage && !user_name) {
   alert("ANDA BELUM LOGIN!")
-  window.location = 'Login.html';
+  window.location = 'index.html';
 }
 else {
   const halo = document.getElementById("nav-left");

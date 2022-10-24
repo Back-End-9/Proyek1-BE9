@@ -1,27 +1,4 @@
-.navbar{
-    height: 95px;
-   
-}
-.nav-right > .navbar-brand{
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.2s;
-}
 
-.dropdown > .navbar-brand {
-    transition: 0.2s;
-}
-
-.dropdown > .navbar-brand:hover {
-    color: #003F7E;
-    border-bottom: solid 4px #E05D0F;
-}
-
-.nav-right > .navbar-brand:hover{
-    color: #003F7E;
-    border-bottom: solid 4px #E05D0F;
-}
 
 .nama-bantuan{
     font-family: Poppins;
@@ -32,10 +9,7 @@
 .img-bantuan{
     width: 300px;
     box-shadow: 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
-}
-
-#field-gambar-bantuan{
-    width: 200px;
+   
 }
 
 .program{
