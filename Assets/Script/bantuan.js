@@ -39,7 +39,7 @@ logout.addEventListener('click', function(e) {
   if (confirm(pesan) == true) {
     localStorage.removeItem('user_id');
     localStorage.removeItem('name');
-    window.location = 'login.html';
+    window.location = 'index.html';
   } 
 });
 
@@ -61,18 +61,17 @@ var notFound=0;
 
 //Untuk Mencetak seluruh bantuan
 function cetakcard(listBantuan) {
-    console.log("listbantuan : "+listBantuan.id_bantuan)
     card.innerHTML += `
-    <div class= "card col-4 m-1 mx-auto mb-4" id="isicard">
+    <div class= "card col-4 m-1 mx-auto p-3 mb-4" id="isicard">
     <img class="card-img-top" src=${listBantuan.gambar} alt="${listBantuan.nama_bantuan}">
-    <div class="card-body">
+    <div class="card-body text-center">
         <h5 class="card-title">${listBantuan.nama_bantuan}</h5>
         <p class="card-text">${listBantuan.deadline}</p>
-        <a href="/detail-bantuan.html?id_bantuan=${listBantuan.id_bantuan}" class="btn btn-primary">Lihat Bantuan</a>
+        <a href="/detail-bantuan.html?id_bantuan=${listBantuan.id_bantuan}" class="btn btn-primary d-flex justify-content-center" style="background-color:#E05D0F; border:none">Lihat Bantuan</a>
     </div>
   </div>`;
 }
-///detail-bantuan.html?id_bantuan=1
+
 async function search(data) {
   hapuselement()
   card.innerHTML = "";

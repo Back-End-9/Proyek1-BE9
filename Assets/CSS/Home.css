@@ -16,14 +16,16 @@
 }
 
 
-/* Navbar farhan*/
+
 
 .nav > .nav-item > .nav-link {
     color: rgb(8, 8, 8);
 }
 
 .nav-left > p {
+    font-size: 24px;
     color: #003F7E;
+    font-weight: 700;
 }
 
 .navbar{
@@ -50,18 +52,20 @@
 
 
 
+
 /* List bantuan*/
 
 #isicard {
+    font-family: Poppins;
+    border : solid 5px #003F7E;
+    border-radius: 20px;
     padding-right: 10px;
     padding-left: 10px;
     margin: 1em;
     width: 18rem;
 }
 
-#isicard img {
-    
-}
+
 
 
 /* #pembungkusCard{

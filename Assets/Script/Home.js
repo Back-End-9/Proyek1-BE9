@@ -12,11 +12,11 @@ console.log("Ini nama user :"+user_name)
 //Jika tidak ada user id maka kembali ke signup
 if (!user_id_localStorage && !user_name) {
   alert("ANDA BELUM LOGIN!")
-  window.location = 'Login.html';
+  window.location = 'index.html';
 }
 else {
   const halo = document.getElementById("nav-left");
-  halo.innerHTML=`<p>Welcome,${user_name}</p>`; 
+  halo.innerHTML=`<p class="text-uppercase">Welcome, ${user_name}</p>`; 
 }
 
 const card = document.getElementById("cardDiv");
@@ -28,6 +28,7 @@ async function getMockApi(url) {
 
   return result;
 }
+
 
 
 logout.addEventListener('click', function(e) {
@@ -53,7 +54,7 @@ getMockApi(`${url}/listBantuan`).then(function (result) {
             <div class="card-body text-center">
                 <h5 class="card-title">${listBantuan.nama_bantuan}</h5>
                 <p class="card-text">${listBantuan.deadline}</p>   
-                <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Bantuan</a>
+                <a href="/detail-bantuan.html?id_bantuan=${listBantuan.id_bantuan}" class="btn btn-primary d-flex justify-content-center" style="background-color:#E05D0F"; border:none">Lihat Bantuan</a>
             </div>
          </div>`;
     }

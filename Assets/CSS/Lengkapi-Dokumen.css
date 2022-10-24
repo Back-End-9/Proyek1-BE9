@@ -1,22 +1,5 @@
-.navbar{
-    height: 95px;
-   
-}
-.nav-right > .navbar-brand{
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.2s;
-}
 
-.nav-right > .navbar-brand:hover{
-    color: #003F7E;
-    border-bottom: solid 4px #E05D0F;
-}
-.back{
-    font-family: Poppins;
-    position: absolute;
-}
+
 .nama-bantuan{
     font-family: Poppins;
     font-weight: 500;
