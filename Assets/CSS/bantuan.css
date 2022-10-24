@@ -1,0 +1,103 @@
+/* Navbar tambahan*/
+
+
+.nav > .nav-item > .nav-link {
+    color: rgb(8, 8, 8);
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.nav > .nav-item > .nav-link:hover {
+    color: #003F7E;
+    border-bottom: solid 3px #E05D0F;
+}
+
+
+
+
+/* Navbar */
+
+.navbar{
+    height: 80px;
+   
+}
+.nav-right > .navbar-brand{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-left > p {
+    color: #003F7E;
+}
+
+.nav-right > .navbar-brand:hover{
+    color: #003F7E;
+    border-bottom: solid 4px #E05D0F;
+}
+
+
+#higlight {
+    color: #003F7E;
+    border-bottom: solid 4px #E05D0F;
+}
+
+
+/* Search */
+
+#search-box{
+    margin-top: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+
+/* List bantuan*/
+
+#isicard {
+    font-family: Poppins;
+    border : solid 5px #003F7E;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 1em;
+    width: 18rem;
+}
+
+
+
+#pembungkusCard{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+
+/* Footer */
+
+
+ul{
+    list-style: none;
+}
+ul > li{
+    margin-bottom: 5px;
+}
+.footer{
+    margin-top: 100px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.alamat{
+    width: 40vw;
+}
+
+.img-footer{
+    width: 150px;
+    height: 100px;
+}

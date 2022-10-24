@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Detail Bantuan</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow">
+      <img src="/Assets/Picture/logo.png" class="my-0 mr-md-auto font-weight-normal" alt="" style="width: 70px; margin-left: 100px;">
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="navbar-brand" href="/home.html">Home</a>
+        <a class="navbar-brand" href="/bantuan.html">Bantuan</a>
+        
+        <a class="dropdown">
+          <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-circle-user" style="font-size: 28px;color: #A9A8A8;"></i
+            ></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" id="logout" href="#">Logout</a>
+          </div>
+        </a>
+        
+      
+      </nav>
+    </div>
+
+    <div class="detail-header row" style="background-color:#003F7E; color:#F8F8F8;  border-bottom-left-radius: 40px;  border-bottom-right-radius: 40px;">
+      <div class="col-sm-6" style="padding-left: 130px;
+      padding-top: 20px;">
+        <a class="p-2" href="/bantuan.html" style="text-decoration: none; color: #F8F8F8;"><i class="fa fa-chevron-left" style="color: #F8F8F8;"></i> Kembali</a>
+        <div>
+          <h1 id="nama_bantuan"></h1>
+          <span id="deadline_bantuan"></span>
+          <!-- Bantuan Pendidikan jenjang S1 22-oct-2022 -->
+        </div>
+        
+        <a href="" class="btn" id="btn" style="color:white; background-color:#F27C36; margin-top:50px;">Apply</a>
+      </div>
+      <div class="col-sm-6 d-flex flex-column align-items-center" style="padding-left: 130px;
+      padding-top: 20px;">
+      <!-- https://i.postimg.cc/C5VsRM55/beasiswa-s1.jpg -->
+        <img id="gambar_bantuan" src="" alt="" style="margin: 15px;">
+        <div style="margin: 30px;">
+          <span>Offered BY</span>
+          <img src="/Assets/Picture/nus.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid row" style="padding-left: 100px;
+    padding-top: 20px; margin-bottom: 50px;">
+      <div class="col-6 col-md">
+        <div>
+          <h2 class="deskripsi">Deskripsi Bantuan</h2>
+          <!-- Bantuan pendidikan jenjang S1 Merupakan program bantuan yang diadakan oleh NUS University adapun bantuan yang diberikan berupa :
+            SPP dan uang gedung gratis selama perkuliahan
+            Bantuan Uang Saku Rp 4.000.000/Semester
+            Bantuan Dana Buku Sebesar Rp 500.00 -->
+          <p id="deskripsi_bantuan"></p>
+        </div>
+        <div>
+          <h2 class="persyaratan">Persyaratan bantuan</h2>
+          <p>
+            <ol style="font-size: 20px; font-family: Poppins;">
+              <li >KTP</li>
+              <li>SKTM</li>
+            </ol>
+            
+            Upload dua file diatas ke dalam gdrive</p>
+        </div>
+      </div>
+      <div class="col-6 col-md d-flex flex-column justify-content-center align-items-center">
+        <h2 class="mb-3">Tahapan Bantuan</h2>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="/Assets/Picture/Vector.png" alt="" class="step-icon">
+          <span class="text-icon">Lengkapi Dokumen</span>
+        </div>
+        <span class="vertical-divider"></span>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="/Assets/Picture/Vector_1.png" alt="" class="step-icon">
+          <span class="text-icon">Verifikasi Dokumen</span>
+        </div>
+        <span class="vertical-divider"></span>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="/Assets/Picture/Vector_2.png" alt="" class="step-icon">
+          <span class="text-icon">Berhasil</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid p-0">
+      <!-- class="pt-4 my-md-5 pt-md-5 border-top" -->
+      <footer class="justify-content-start" >
+        <div class="row align-items-center d-flex justify-content-center" style="height: 300px;">
+          <div class="col">
+           <img class="ml-5" src="/Assets/Picture/logo.png" alt="">
+          </div>
+          <div class="col">
+            <div class="footer-info">
+              <h5>Bantuin.aja Part of PT IMPACTBYTE TEKNOLOGI EDUKASI.</h5>
+              <span>Jl. Kemang Raya No.10, Bangka, Mampang Prapatan, Jakarta Selatan 12730. DKI Jakarta 12730, Indonesia</span><br>
+              <span>Telepon  : 08123423491381</span>
+            </div>
+          </div>
+         
+        </div>
+        <div class="row text-center">
+          <div class="col mt-5 mb-2">
+            <span>@Copyright 2022 by  bantuin.aja skilvull</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="/Assets/Script/detail-bantuan.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
